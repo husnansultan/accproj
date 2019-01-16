@@ -10,6 +10,7 @@ import com.qa.util.JSONUtil;
 public class Service {
 
 	private HashMap<Integer, Account> accounts = new HashMap<>();
+	
 	private int counter = 1;
 	private JSONUtil json = new JSONUtil();
 
@@ -18,7 +19,7 @@ public class Service {
 		counter++;
 
 	}
-
+ 
 	public Account getmyAccount(int accountNumber) {
 		return accounts.get(accountNumber);
 
