@@ -30,4 +30,14 @@ public class AccountService {
 		
 		assertEquals(1, serv.getmyAccount(1).getAccountNumber());
 	}
+	
+	@Test
+	public void occurences() {
+		Service serv = new Service();
+		serv.addAccount("hus", "sul");
+		serv.addAccount("hus", "sul");
+		serv.addAccount("hus", "sul");
+		
+		assertEquals(3, serv.searchAccounts("hus"));
+	}
 }
